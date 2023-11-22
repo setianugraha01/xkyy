@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<title>Halaman Pribadi</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #000000;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+.container {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #ffffff;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  transform: translate(0, -11px) rotate(45deg);
+}
+</style>
+<body class="w3-black">
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <!-- Avatar image in top left corner -->
+
+  <!-- <img src="C:\Users\VivoBook\Desktop\Tugas web\praktek-desain-web\halaman pribadi\IMG-20231023-WA0004.jpg" style="width:100%;"> -->
+
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>HOME</p>
+  </a>
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>ABOUT</p>
+  </a>
+  <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-eye w3-xxlarge"></i>
+    <p>PHOTOS</p>
+  </a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-phone fa-fw w3-text-white w3-xxlarge"></i>
+    <p>CONTACT</p>
+  </a>
+  <a href="#comment" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p>COMMENT</p>
+  </a>
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+    <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">SOCIAL MEDIA</a>
+    <a href="#comment" class="w3-bar-item w3-button" style="width:25% !important">COMMENT</a>
+  </div>
+</div>
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <div class="name">
+    <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+      <img src="IMG-20231023-WA0004.jpg" alt="boy" class="w3-image" width="992" height="1108">
+    </header>
+  </div>
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h2 class="w3-text-light-grey">Rifki Setia Nugraha</h2>
+    <hr style="width:285px" class="w3-opacity">
+    <p>Mahasiswa Pendidikan Teknologi Informasi Dan Komunikasi, di Sekolah Tinggi Keguruan Dan Ilmu Pendidikan. Mahasiswa aktif dan pantang menyerah.
+       Aktif dalam keanggotaan organisasi internal (HIMA), dan aktif dalam keanggotaan organisasi external (GMNI) Memiliki ketertarikan tinggi di bidang photografy dan desainer.
+    </p>
+    <h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
+    <p class="w3-wide">Sosialisasi</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:50%"></div>
+    </div>
+    <p class="w3-wide">Keagamaan</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:80%"></div>
+    </div>
+    <p class="w3-wide">Komunikasi</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:65%"></div>
+    </div><br>
+    
+  <!-- Portfolio Section -->
+  <div class="w3-padding-64 w3-content" id="photos">
+    <h2 class="w3-text-light-grey">My Photos</h2>
+    <hr style="width:160px" class="w3-opacity">
+
+    <!-- Grid for photos -->
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half">
+        <img src="image.1.jpg" style="width:100%">
+        <img src="image.2.jpg" style="width:100%">
+        <img src="image.3.jpg" style="width:100%">
+      </div>
+
+      <div class="w3-half">
+        <img src="image.4.jpg" style="width:100%">
+        <img src="image.5.jpg" style="width:100%">
+        <img src="image.6.jpg" style="width:100%">
+        <img src="image.7.jpg" style="width:100%">
+      </div>
+    <!-- End photo grid -->
+    </div>
+  <!-- End Portfolio Section -->
+  </div>
+  <!-- Contact Section -->
+  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+    <h2 class="w3-text-light-grey">Contact Me</h2>
+    <hr style="width:175px" class="w3-opacity">
+
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Alamat:<i><a href="https://maps.app.goo.gl/FFFuhUwBoEKsvZUw7"> Desa Citundun, Kecamatan Ciwaru, Kabupaten Kuningan, Jawa Barat</a></i></p>
+      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email:<i><a href="https//mailto: setianugraha194@mail.com"> setianugraha194@mail.com</a></i></p>
+      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone:<i><a href="https://wa.me/081220823653"> 081220823653</a></i></p>
+      <p><i class="fa fa-instagram fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Instagram:<i><a href="https://instagram.com/xkyngrha_?igshid=MzRlODBiNWFlZA=="> Xkyngrha_</a></i></p>
+      <p><i class="fa fa-facebook fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Facebook:<i><a href="https://www.facebook.com/rifkisetia.nugraha.3"> Rfkys Ngrh</a></i></p>
+      <p><i class="fa fa-twitter fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Twitter:<i><a href="https://x.com/search?q=bmkg&t=sW-tPwhLPN5w5-7QRt-RHw&s=09"> Rfkys_</a></i></p>
+    </div><br>
+
+    <div class="w3-padding-64 w3-content w3-text-grey" id="comment">
+    <h2 class="w3-text-light-grey">Comment</h2>
+    <hr style="width:155px" class="w3-opacity">
+        <p>Let's get in touch. Send me a message:</p>
+
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
+      <p>
+        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+    </form>
+
+    <img src="amar.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <p><span class="w3-large w3-text-black w3-margin-right">Chandler Bing.</span></p>
+    <p>“Pendidikan adalah satu-satunya kunci untuk membuka dunia ini, serta paspor untuk menuju kebebasan.” </p><br>
+   
+    <img src="ndess.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <p><span class="w3-large w3-text-black w3-margin-right">Chris Fox.</span></p>
+    <p>“Seseorang yang telah berhenti belajar adalah orang lanjut usia, meskipun umurnya masih berusia remaja. Seseorang yang tidak pernah berhenti belajar akan selamanya menjadi pemuda.”</p><br>
+    
+    <img src="rifki.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <p><span class="w3-large w3-text-black w3-margin-right">Rebecca Flex.</span></p>
+    <p>“Suatu saat nanti, kamu yang hari ini suka menunda-nunda pekerjaan adalah kamu yang nanti akan menyesal karena membuang waktumu untuk melakukan hal-hal yang tidak berguna.”</p><br>
+    
+  <!-- End Contact Section -->
+  </div>
+  
+    <!-- Footer -->
+  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+   <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+    <p class="w3-medium">Powered by Xkyngrha_</a></p>
+  <!-- End footer -->
+  </footer>
+
+<!-- END PAGE CONTENT -->
+</div>
+
+</body>
+</html>
